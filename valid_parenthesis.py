@@ -10,7 +10,7 @@ class Solution:
 
         for chara in s: 
             if chara in hashmap:
-                if stack and stack[-1] == hashmap(chara):
+                if stack and stack[-1] == hashmap[chara]:
                     stack.pop()
                 else:
                     return False
